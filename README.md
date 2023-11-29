@@ -1,29 +1,35 @@
 # Card-Probability
 ## Problem
-In collectible/trading card games like Magic The Gathering and HearthStone it is important for some decks to draw a specific card by a certain turn. For this problem, you will be calculating the probability of drawing at least one copy of a specific card by a given turn
+In collectible/trading card games like Magic The Gathering and HearthStone it is important for some decks to draw a specific card by a certain turn. 
 
-Here's how our card game will be played
+This program will be calculating the probability of drawing at least one copy of a specific card by a given turn
 
-You will initially draw N cards from your deck. This is your starting hand
-The next step is the mulligan. In the mulligan step you select between 0 and N cards to set aside. Let the number of cards you choose to set aside be M. You will then draw M more cards from the deck.
-Note. You cannot redraw the cards you set aside because you set them aside and did not place them back into the deck
-You then shuffle those cards back into the deck
-After the initial draw and the mulligan you draw one card per turn.
-So now we want to calculate what are the odds that you will get at least one copy of the card you are looking for by the desired turn.
+Here's how our card game will be played:
 
-Note that we are calculating the actual probability in this problem and are NOT estimating it through simulation. This means that there is NO randomness at all in this problem.
+1. You will initially draw N cards from your deck. This is your starting hand
+2. The next step is the mulligan. In the mulligan step you select between 0 and N cards to set aside. Let the number of cards you choose to set aside be M. You will then draw M more cards from the deck.
+  - Note. You cannot redraw the cards you set aside because you set them aside and did not place them back into the deck
+3. You then shuffle those cards back into the deck
+4. After the initial draw and the mulligan you draw one card per turn.
+
+Then the program calculates the odds that you will get at least one copy of the card you are looking for by the desired turn.
+
+** Note that we are calculating the actual probability in this problem and are NOT estimating it through simulation. This means that there is NO randomness at all in this problem.
+
 ## Assumptions
 Input will always be valid.
 
 Valid Input:
-Number of cards in the deck: an integer greater than 0
-Copies we are looking for: an integer greater than 0
-Initial hand size: an integer greater than or equal to 0
-Number of Cards to Mulligan: an integer greater than or equal to 0
-Turn to draw by: an integer greater than or equal to 0
+  - Number of cards in the deck: an integer greater than 0
+  - Copies we are looking for: an integer greater than 0
+  - Initial hand size: an integer greater than or equal to 0
+  - Number of Cards to Mulligan: an integer greater than or equal to 0
+  - Turn to draw by: an integer greater than or equal to 0
+
 ## Requirements
 Print all floats to 2 decimal points unless stated otherwise
-You must use have at least three functions in your program
+Must have at least three functions in the program
+
 ## Restrictions
 No global variables may be used
 # Examples
